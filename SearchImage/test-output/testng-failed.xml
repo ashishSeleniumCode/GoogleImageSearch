@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GoogleSearch]">
+  <test thread-count="5" name="search Image(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="imageSearch.testCases.TC_ImageSearch_001">
         <methods>
@@ -10,5 +11,5 @@
         </methods>
       </class> <!-- imageSearch.testCases.TC_ImageSearch_001 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- search Image(failed) -->
+</suite> <!-- Failed suite [GoogleSearch] -->

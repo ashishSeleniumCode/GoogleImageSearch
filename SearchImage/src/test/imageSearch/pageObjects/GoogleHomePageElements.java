@@ -59,7 +59,6 @@ public class GoogleHomePageElements {
 		{
 			orgVal = searchResults.get(i).getText();
 			Assert.assertTrue(orgVal.contains("Toyota"));
-			System.out.println("Search result Passed");
 		}
 	
 	}
