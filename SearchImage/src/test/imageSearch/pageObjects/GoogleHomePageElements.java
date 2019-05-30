@@ -47,19 +47,25 @@ public class GoogleHomePageElements {
 		searchResults.get(val-1).click();
 	}
 	
-	public void searchElement()
+	public boolean searchElement()
 	{
 		//String expVal = "Toyota supra 2020 price";
 		List<WebElement> searchResults=ldriver.findElements(By.xpath("//h3[@class='LC20lb']"));
-		
+		boolean resultsAreRelevant = false;
 		
 		int size = searchResults.size();
 		for (int i =0; i<size; i++)
 	
 		{
 			orgVal = searchResults.get(i).getText();
-			Assert.assertTrue(orgVal.contains("Toyota"));
+			resultsAreRelevant=orgVal.contains("Toyota");
+			if (!resultsAreRelevant)
+			{
+				break;
+			}
 		}
+		
+		return resultsAreRelevant;
 	
 	}
 	

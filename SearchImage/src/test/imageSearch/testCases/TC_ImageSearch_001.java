@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import imageSearch.pageObjects.GoogleHomePageElements;
 import imageSearch.utilities.Screenshot;
+import junit.framework.Assert;
 
 public class TC_ImageSearch_001 extends BaseClass {
 	
@@ -27,7 +28,7 @@ public class TC_ImageSearch_001 extends BaseClass {
 		logger.info("Selected the result successfully as mentioned in the configuration file");
 		driver.navigate().back();
 		logger.info("Navigated successfully to the search result page");
-		googlePage.searchElement();
+		Assert.assertEquals("Search result is not matching", true, googlePage.searchElement());
 		logger.info("Validated the Search result is matching with the image entered");
 		Screenshot.captureScreenshot(driver, "lastPageScreenshot");
 		logger.info("Screenshot taken successfully");

@@ -2,10 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [GoogleSearch]">
   <test thread-count="5" name="search Image(failed)">
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="imageSearch.testCases.TC_ImageSearch_001">
         <methods>
+          <include name="closeBrowser"/>
           <include name="image"/>
           <include name="setup"/>
         </methods>

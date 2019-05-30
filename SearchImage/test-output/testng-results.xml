@@ -2,26 +2,30 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="GoogleSearch" duration-ms="213339" started-at="2019-05-30T09:50:19Z" finished-at="2019-05-30T09:53:52Z">
+  <suite name="GoogleSearch" duration-ms="22604" started-at="2019-05-30T12:33:33Z" finished-at="2019-05-30T12:33:56Z">
     <groups>
     </groups>
-    <test name="search Image" duration-ms="213339" started-at="2019-05-30T09:50:19Z" finished-at="2019-05-30T09:53:52Z">
+    <test name="search Image" duration-ms="22604" started-at="2019-05-30T12:33:33Z" finished-at="2019-05-30T12:33:56Z">
       <class name="imageSearch.testCases.TC_ImageSearch_001">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:imageSearch.testCases.TC_ImageSearch_001@53b32d7]" name="setup" is-config="true" duration-ms="11353" started-at="2019-05-30T09:50:19Z" finished-at="2019-05-30T09:50:30Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:imageSearch.testCases.TC_ImageSearch_001@5442a311]" name="setup" is-config="true" duration-ms="5348" started-at="2019-05-30T12:33:33Z" finished-at="2019-05-30T12:33:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="image()[pri:0, instance:imageSearch.testCases.TC_ImageSearch_001@53b32d7]" name="image" duration-ms="201964" started-at="2019-05-30T09:50:30Z" finished-at="2019-05-30T09:53:52Z">
+        <test-method status="PASS" signature="image()[pri:0, instance:imageSearch.testCases.TC_ImageSearch_001@5442a311]" name="image" duration-ms="16322" started-at="2019-05-30T12:33:39Z" finished-at="2019-05-30T12:33:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- image -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:imageSearch.testCases.TC_ImageSearch_001@5442a311]" name="closeBrowser" is-config="true" duration-ms="906" started-at="2019-05-30T12:33:55Z" finished-at="2019-05-30T12:33:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- imageSearch.testCases.TC_ImageSearch_001 -->
     </test> <!-- search Image -->
   </suite> <!-- GoogleSearch -->
